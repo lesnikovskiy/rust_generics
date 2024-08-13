@@ -8,8 +8,10 @@ fn solve<T: Float>(a: T, b: T) -> f64 {
 }
 
 fn main() {
-    let a: f32 = 3.0;
-    let b: f32 = 4.0;
+    let a: f64 = 3.0;
+    let b: f64 = 4.0;
 
-    println!("{}", solve::<f32>(a, b));
+    println!("{}", solve::<f64>(a, b));
+    // you can call solve without ::
+    println!("{}", solve(a, b));
 }
